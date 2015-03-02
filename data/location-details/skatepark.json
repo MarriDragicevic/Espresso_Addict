@@ -1,0 +1,24 @@
+{
+    "image": "skatepark",
+    "description": "Some cool kids are skating around in the park behind the station.",
+    "choices": {
+        "Go back to the station": {
+            "goto": "town-station"
+        },
+        "Sell skateboard to skater": {
+            "if in bag": "a skateboard",
+            "if has happened": "a skateboard",
+            "description": "You force the kid to buy a new skateboard. You convince him that his skateboard is useless and needs a new one. He tries to bargain, but you want 20$ no matter what",
+            "money": 20
+        },
+        "Wait": [
+            {
+                "description": "Kids pretending to be cool around here. Can't even do an ollie."
+            },
+            {
+                "description": "That youngster looks like he is 50 years old",
+                "health": -5
+            }
+        ]
+    }
+}

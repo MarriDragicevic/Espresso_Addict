@@ -1,0 +1,21 @@
+{
+    "image": "florist",
+    "description": "You're passing a florist butique. It smells good, but it doesn't smell coffe.",
+    "choices": {
+        "Sell flower to florist": {
+            "if in bag": "a flower",
+            "if has happened": "a flower",
+            "description": "You try to sell the flower to the florist. \" What? Well... You seem desperate... And its a pretty flower.\" Okey.. I'll buy it for 5$\"",
+            "money": 5
+        },
+        "Wait": [
+            {
+                "description": "Maybe a nice stranger can give me some coffe?"
+            },
+            {
+                "description": "The flowers smells nice , but I want the nice smell of coffe.",
+                "health": -3
+            }
+        ]
+    }
+}

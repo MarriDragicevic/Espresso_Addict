@@ -1,0 +1,27 @@
+{
+    "image": "espresso-machine",
+    "description": "It's flawless. Glowing. It's beauty is mesmerizing. Wow.",
+    "choices": {
+    	"Go back to the mall": {
+    			"goto": "mall-inside"
+    		},
+        "Go back to the mall entrance": {
+            "goto": "mall"
+        },
+        "Buy an espresso": {
+            "description": "Oh lala! That was perfection in a cup",
+            "if money": 5,
+            "espressocups": 1,
+            "health": 10,
+            "money": -5
+        },
+        "Wait": [
+            {
+                "description": "What am I waiting for."
+            },
+            {
+                "description": "I should really buy a coffe."
+            }
+        ]
+    }
+}

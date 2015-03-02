@@ -1,0 +1,14 @@
+{
+  "location": "cafe",
+  "bag": [],
+  "status": {
+    "health": 70,
+    "money": 5,
+    "espressocups": 0
+  },
+  "status max values": {
+    "health": 100,
+    "money": 100,
+    "espressocups": 10
+  }
+}

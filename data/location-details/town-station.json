@@ -1,0 +1,33 @@
+{
+	"image": "town-station",
+	"description": "You're at the train station. Going somewhere? Coffiana Jones on the run!",
+	"choices": {
+		"Oh, a skatepark!": {
+				"goto": "skatepark"
+			},
+			"Wait": [
+				{
+					"description": "There is a lot going on here... People have dropped so many things here. "
+				},
+				{
+					"description": "Look at this skateboard! Finders keepers!",
+					"gift": "a skateboard",
+					"happening" : "a skateboard",
+        			"show only once": true
+				},
+				{
+					"description": "The sun is burning..",
+					"health": -5
+				},
+				{
+					"description": "OH MY I FOUND 5$! Oh look at this pretty little flower too",
+					"gift": "a flower",
+					"happening" : "a flower",
+					"money":5,
+        			"show only once": true
+				}
+
+			]
+		}
+
+	}

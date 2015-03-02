@@ -1,0 +1,27 @@
+{
+    "image": "mall-inside",
+    "description": "Cool! A bike store! A build-a-bear workshop! Oh even an aquarium in the middle of everything! I can even smell coffe...",
+    "choices": {
+        "Exit the mall": {
+            "goto": "mall"
+        },
+        "Look right": {
+            "goto": "espresso-machine"
+        },
+        "Sell the stolen bike": {
+            "if in bag": "stolen bike",
+            "if has happened": "stolen bike",
+            "description": "Howdy there! Oh you want to sell your bike? You'll get a nice 20$ for it!",
+            "money": 20
+        },
+        "Wait": [
+            {
+                "description": "I love hanging around in the mall, drinking coffe... But I don't have coffe.",
+                "health": -5
+            },
+            {
+                "description": "There's so many people here."
+            }
+        ]
+    }
+}

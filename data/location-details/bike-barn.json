@@ -1,0 +1,24 @@
+{
+    "image": "bike-barn",
+    "description": "You see a bike barn. You take a look around. There are bikes on sale",
+    "choices": {
+        "Is that a bar?": {
+            "goto": "bar"
+        },
+        "Wait": [
+            {
+                "description": "The sun is still burning. Need espresso!",
+                "health": -5
+            },
+            {
+                "description": "Maybe I should steal a bike. No-caffeine time sure gives me crazy thoughts."
+            },
+            {
+                "description": "I should steal a bike. Maybe I shoudln't. Holy guacamoley! YOU STOLE IT! RUN!!",
+                "gift": "stolen bike",
+                "happening": "stolen bike",
+                "show only once": true
+            }
+        ]
+    }
+}

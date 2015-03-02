@@ -1,0 +1,19 @@
+{
+    "image": "mall",
+    "description": "You're right by the mall. Maybe there's something cool inside",
+    "choices": {
+        "Enter the mall": {
+            "goto": "mall-inside"
+        },
+        "Wait": [
+            {
+                "description": "I'm just standing here wasting my time",
+                "health": -5
+            },
+            {
+                "description": "I feel no coffe flowing through my veins",
+                "health": -5
+            }
+        ]
+    }
+} 
